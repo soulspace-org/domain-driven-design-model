@@ -1,0 +1,133 @@
+;;;;
+;;;; Generation Config
+;;;;
+[;;;
+ ;;; Documentation
+ ;;;
+ ;;
+ ;;  Diagram Generation for Views
+ ;;
+ {:view-selection {:el :model-view}
+  :template "views/model-view.dot.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "dot"}
+
+ {:view-selection {:el :system-structure-view}
+  :template "views/system-structure-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
+ {:view-selection {:el :deployment-structure-view}
+  :template "views/deployment-structure-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
+ {:view-selection {:el :organization-structure-view}
+  :template "views/organization-structure-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
+ ;;
+ ;;  Markdown Generation for Model Elements
+ ;;
+ {:selection {:el :technical-architecture-model-node}
+  :template "docs/architecture-node.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:els #{:organization :org-unit}}
+  :template "docs/organization.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :person}
+  :template "docs/user-role.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ 
+ {:selection {:el :concept}
+  :template "docs/concept.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :use-case}
+  :template "docs/use-case.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ ;;
+ ;;  Markdown Generation for Views
+ ;; 
+ {:view-selection {}
+  :template "docs/views/views.md.cmb"
+  :base-namespace "ddd"
+  :base-name "views"
+  :extension "md"}
+ {:view-selection {:el :concept-view}
+  :template "docs/views/concept-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :use-case-view}
+  :template "docs/views/use-case-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :context-view}
+  :template "docs/views/context-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :container-view}
+  :template "docs/views/container-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :component-view}
+  :template "docs/views/component-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :system-landscape-view}
+  :template "docs/views/system-landscape-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :dynamic-view}
+  :template "docs/views/dynamic-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :state-machine-view}
+  :template "docs/views/state-machine-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :code-view}
+  :template "docs/views/code-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+ {:view-selection {:el :deployment-view}
+  :template "docs/views/deployment-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"
+  :debug true}
+ {:view-selection {:el :glossary-view}
+  :template "docs/views/glossary-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ ;
+ ]
