@@ -1,0 +1,76 @@
+<%
+;;;;
+;;;; Documentation Template for a Container View
+;;;;
+;;;; config:
+;;;;  :per-element true
+;;;;  :id-as-name  true
+;;;;
+
+(let [elements (v/view-elements model e)
+      roles (filter #(= :person (:el %)) elements)
+      systems (filter #(= :system (:el %)) elements)
+      containers (filter #(= :container (:el %)) elements)
+      app-containers (filter #(= nil (:subtype %)) containers)
+      queue-containers (filter #(= :queue (:subtype %)) containers)
+      storage-containers (filter #(= :database (:subtype %)) containers)
+      relations (filter m/model-relation? elements)
+      request-relations (filter #(= :request (:el %)) relations)
+      response-relations (filter #(= :response (:el %)) relations)
+      publish-relations (filter #(= :publish (:el %)) relations)
+      subscribe-relations (filter #(= :subscribe (:el %)) relations)
+      send-relations (filter #(= :send (:el %)) relations)
+      dataflow-relations (filter #(= :dataflow (:el %)) relations)]
+
+%># <%= (:title e)%>
+
+## Diagram
+<%=(md/relative-view-link e e)%>
+
+## Description
+<%= (:desc e) %>
+<%
+  (when (:doc e)
+%>
+## Documentation
+<%= (:doc e) %>
+<%
+  )
+
+  (when (seq roles)
+%>
+## User Roles
+| Name | Description |
+|---|---|
+<%
+    (doseq [role (sort-by :name roles)]
+%>| <%= (md/relative-element-link e role) %> | <%= (t/single-line (:desc role)) %> |
+<%
+    )
+  )
+
+  (when (seq systems)
+%>## Systems
+| Name | Description |
+|---|---|
+<%
+    (doseq [system (sort-by :name systems)]
+%>| <%= (md/relative-element-link e system) %> | <%= (t/single-line (:desc system)) %> |
+<%
+    )
+  )
+  
+  (when (seq containers)
+%>## Containers
+| Name | Description |
+|---|---|
+<%
+    (doseq [container (sort-by :name containers)]
+%>| <%= (md/relative-element-link e container) %> | <%= (t/single-line (:desc container)) %> |
+<%
+    )
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

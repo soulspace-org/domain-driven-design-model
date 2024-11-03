@@ -1,0 +1,111 @@
+<%
+;;;;
+;;;; Documentation Template for a Concept
+;;;;
+;;;; config:
+;;;;  :per-element true
+;;;;  :id-as-name  true
+;;;;
+
+; TODO add featured in and other relations
+(let [superordinates (m/superordinates model e)
+      subordinates (m/subordinates model e)
+      features (m/features model e)
+      features-of (m/feature-of model e)
+      related-to nil ; TODO add other relations
+      related-from nil ; TODO add other relations
+      ]
+
+%>#<%= (:name e) %> (<%= (m/element-type e) %>)
+## Description
+<%= (:desc e) %>
+<%
+  (when (:doc e)
+%>## Documentation
+<%= (:doc e) %>
+<%
+  )
+
+  (when (seq superordinates)
+%># Superordinates
+| Name | Description |
+|---|---|
+<%
+    (doseq [superordinate (sort-by :name superordinates)]
+%>| <%= (md/relative-element-link e superordinate) %> | <%= (t/single-line (:desc superordinate)) %> |
+<%
+    )
+  )
+
+  (when (seq subordinates)
+%># Subordinates
+| Name | Description |
+|---|---|
+<%
+    (doseq [subordinate (sort-by :name subordinates)]
+%>| <%= (md/relative-element-link e subordinate) %> | <%= (t/single-line (:desc subordinate)) %> |
+<%
+    )
+  )
+
+  (when (seq features)
+%># Features
+| Name | Description |
+|---|---|
+<%
+    (doseq [feature (sort-by :name features)]
+%>| <%= (md/relative-element-link e feature) %> | <%= (t/single-line (:desc feature)) %> |
+<%
+    )
+  )
+
+  (when (seq features-of)
+%># Feature of
+| Name | Description |
+|---|---|
+<%
+    (doseq [feature (sort-by :name features-of)]
+%>| <%= (md/relative-element-link e feature) %> | <%= (t/single-line (:desc feature)) %> |
+<%
+    )
+  )
+
+  ; TODO add other relations
+  (when (seq related-to)
+%># Related to
+| Name | Description |
+|---|---|
+<%
+    (doseq [rel (sort-by :name related-to)]
+%>| <%= (md/relative-element-link e rel) %> | <%= (t/single-line (:desc rel)) %> |
+<%
+    )
+  )
+
+  ; TODO add other relations
+  (when (seq related-from)
+%># Relation from
+| Name | Description |
+|---|---|
+<%
+    (doseq [rel (sort-by :name related-from)]
+%>| <%= (md/relative-element-link e rel) %> | <%= (t/single-line (:desc rel)) %> |
+<%
+    )
+  )
+
+;;
+;; include relevant view diagrams
+;;
+  (when 
+    (and (contains? #{:concept} (:el e)) (m/resolve-view model e "concept-view"))
+%>
+## Concept Map
+<%= (md/relative-view-link e (m/resolve-view model e "concept-view")) %>
+<%= (md/relative-element-link e (m/resolve-view model e "concept-view")) %>
+<%
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

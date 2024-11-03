@@ -1,0 +1,237 @@
+<%
+;;;;
+;;;; Documentation Template for an Architecture Node
+;;;;
+;;;; config:
+;;;;  :per-element true
+;;;;  :id-as-name  true
+;;;;
+
+(let [children (m/children model e)
+      bounded-contexts (filterv #(= :context-boundary (:el %)) children)
+      containers (filterv #(= :container (:el %)) children)
+      app-containers (filterv #(= nil (:subtype %)) containers)
+      data-containers (filterv #(= :database (:subtype %)) containers)
+      queue-containers (filterv #(= :queue (:subtype %)) containers)
+      components (filterv #(= :component (:el %)) children)
+      requests-incoming (m/requests-incoming model e)
+      requests-outgoing (m/requests-outgoing model e)
+      publishes-incoming (m/publishes-incoming model e)
+      publishes-outgoing (m/publishes-outgoing model e)
+      subscribes-incoming (m/subscribes-incoming model e)
+      subscribes-outgoing (m/subscribes-outgoing model e)
+      sends-incoming (m/sends-incoming model e)
+      sends-outgoing (m/sends-outgoing model e)
+      dataflows-incoming (m/dataflows-incoming model e)
+      dataflows-outgoing (m/dataflows-outgoing model e)]
+
+%># <%= (:name e) %> (<%= (m/element-type e) %>)
+## Description
+<%= (:desc e) %>
+
+## Technology
+<%= (:tech e) %>
+
+<%
+  (when (:doc e)
+%>## Documentation
+<%= (:doc e) %>
+<%
+  )
+
+  (when (seq bounded-contexts)
+%>
+## Subdomains/Bounded Contexts
+The system consists of different subdomains which have been structured into bounded contexts
+
+| Bounded Context | Description |
+|---|---|
+<%
+    (doseq [bc (sort-by :name bounded-contexts)]
+%>| <%= (md/relative-element-link e bc) %> | <%= (t/single-line (:desc bc)) %> |
+<%
+    )
+  )
+
+  (when (seq containers)
+%>## Containers
+These containers are the main processes of the <%= (:name e) %> system.
+
+| Container | Description |
+|---|---|
+<%
+    (doseq [container (sort-by :name containers)]
+%>| <%= (md/relative-element-link e container)%>| <%= (t/single-line (:desc container)) %> |
+<%
+    )
+  )
+
+  (when (seq components)
+%>## Components
+These components show the internal structure of the <%= (:name e) %> container.
+
+| Component | Description |
+|---|---|
+<%
+    (doseq [component (sort-by :name components)]
+%>| <%= (md/relative-element-link e component) %> | <%= (t/single-line (:desc component)) %> |
+<%
+    )
+  )
+
+;;
+;; interface docs for relations
+;;
+%>
+## Interfaces
+<%
+  (when (or (seq requests-incoming) (seq requests-outgoing))
+%>
+### Synchronous Interfaces
+<%
+    (when (seq requests-incoming)
+%>
+#### Service
+| Name | Called From | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req requests-incoming]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:from req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+
+    (when (seq requests-outgoing)
+%>
+#### Client
+| Name | Provided By | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req requests-outgoing]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:to req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+  )
+
+  (when (or (seq publishes-incoming) (seq publishes-outgoing)
+            (seq subscribes-incoming) (seq subscribes-outgoing))
+%>
+### Asynchronous Publish/Subscribe Interfaces
+<%
+    (when (seq publishes-outgoing)
+%>
+#### Publishing/Producing
+| Name | Queue/Topic | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req publishes-outgoing]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:to req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+
+    (when (seq subscribes-outgoing)
+%>
+#### Subscribing/Consuming
+| Name | Queue/Topic | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req subscribes-outgoing]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:to req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+  )
+
+  (when (or (seq sends-incoming) (seq sends-outgoing))
+%>
+### Asynchronous Peer-to-Peer Interfaces
+<%
+    (when (seq sends-outgoing)
+%>
+#### Sender
+| Name | Receiver | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req sends-outgoing]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:to req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+
+    (when (seq sends-incoming)
+%>
+#### Receiver
+| Name | Sender | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req sends-incoming]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:from req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+  )
+
+  (when (or (seq dataflows-incoming) (seq dataflows-incoming))
+%>
+### Dataflow
+<%
+    (when (seq dataflows-incoming)
+%>
+#### Receiver
+| Name | Sender | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req dataflows-incoming]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:from req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+
+    (when (seq dataflows-outgoing)
+%>
+#### Sender
+| Name | Receiver | Technology | Description |
+|---|---|---|---|
+<%
+      (doseq [req dataflows-outgoing]
+%>| <%= (:name req) %> | <%= (md/relative-element-link e (m/resolve-element model (:to req))) %> | <%= (:tech req) %> | <%= (t/single-line (:desc req)) %> |
+<%
+      )
+    )
+  )
+
+;;
+;; include relevant view diagrams
+;;
+  (when (and (contains? #{:system} (:el e)) (m/resolve-view model e "context-view"))
+%>
+## System Context View
+<%= (md/relative-view-link e (m/resolve-view model e "context-view")) %>
+
+<%= (md/relative-element-link e (m/resolve-view model e "context-view")) %>
+<%
+  )
+  
+  (when (and (contains? #{:context-boundary :container} (:el e)) (m/resolve-view model e "container-view"))
+%>
+## Container View
+<%= (md/relative-view-link e (m/resolve-view model e "container-view")) %>
+
+<%= (md/relative-element-link e (m/resolve-view model e "container-view")) %>
+<%
+  )
+
+  (when (and (contains? #{:component} (:el e)) (m/resolve-view model e "component-view"))
+%>
+## Component View
+<%= (md/relative-view-link e (m/resolve-view model e "component-view")) %>
+
+<%= (md/relative-element-link e (m/resolve-view model e "component-view")) %>
+<%
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

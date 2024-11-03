@@ -11,14 +11,18 @@
           :layout :left-right
           ;:graphviz {:engine :neato}
           :markdown {:references true}}
+   :name "Concept Map"
    :title "Concept Map of the Domain Driven Design Patterns"
+   :desc "Shows the concepts and their relations"
    :ct []}
 
   {:el :glossary-view
    :id :ddd/glossary-view
    :spec {:selection {:el :concept}
           :markdown {:references true}}
+   :name "Glossary"
    :title "Glossary of the Domain Driven Design Patterns"
+   :desc "Shows all relevant patterns with a description"
    :ct []}
 
   ;

@@ -1,0 +1,40 @@
+<%
+;;;;
+;;;; Documentation Template for a Capability
+;;;;
+;;;; config:
+;;;;  :per-element true
+;;;;  :id-as-name  true
+;;;;
+
+(let [processes nil ; TODO
+      ]
+    
+%># <%= (:name e) %> (<%= (m/element-type e) %>)
+## Description
+<%= (:desc e) %>
+
+<%
+  (when (:doc e)
+%>## Documentation
+<%= (:doc e) %>
+
+<%
+  )
+
+  (when (seq processes)
+%>
+## Roles
+| Name | Description |
+|---|---|
+<%
+    (doseq [process (sort-by :name processes)]
+%>| <%= (md/relative-element-link e process) %> | <%= (t/single-line (:desc process)) %> |
+<%
+    )
+  )
+
+)
+%>
+
+(generated with <%= (:template ctx) %>)

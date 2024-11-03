@@ -2,16 +2,16 @@
 
 A concept model of the patterns of domain driven design (DDD) for [Overarch](https://github.com/soulspace-org/overarch).
 
+## Documentation generated from the model
+* [List of Views](docs/views.md)
+
 ## Prerequisites
 To generate diagrams and documentation for this model, you need to have Java 11+ and Graphviz installed.
-
-For the Overarch templates, you need to check out the [Overarch repository](https://github.com/soulspace-org/overarch)
-beside this project. 
 
 ## Generation
 The project provides the JAR files for Overarch and PlantUML in the `tools` folder.
 
-The `generate.sh` script in the root folder calls Overarch to render views and
+The `publish.sh` script in the root folder calls Overarch to render views and
 template based artifacts and then calls PlantUML and GraphViz to generate
 images from the rendered views.
 

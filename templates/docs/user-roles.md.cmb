@@ -1,0 +1,21 @@
+<%
+;;;;
+;;;; Documentation Template for a Collection of Persons (User Roles)
+;;;;
+
+(let [roles (filter #(= :person (:el %)) e)]
+%># User Roles
+
+This is a list of the user roles.
+
+| User Role | Description |
+|---|---|
+<%
+  (doseq [role (sort-by :name roles)]
+%>| <%= (md/element-link role) %> | <%= (t/single-line (:desc role)) %> |  
+<%
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

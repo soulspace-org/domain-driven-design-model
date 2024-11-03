@@ -1,0 +1,29 @@
+<%
+;;;;
+;;;; Documentation Template for a Collection of Use Cases
+;;;;
+
+(defn use-case-level
+  "Renders the level of the use case `uc`."
+  [uc]
+  (if-let [level (:level uc)]
+    (str/capitalize (name level))
+    "---"))
+
+(let [use-cases (filter #(= :use-case (:el %)) e)]
+
+%># Use Cases
+
+This is a list of the use cases.
+
+| Use Case | Level | Description |
+|---|---|---|
+<%
+  (doseq [use-case (sort-by :name use-cases)]
+%>| <%= (md/element-link use-case) %> | <%= (use-case-level use-case) %> | <%= (t/single-line (:desc use-case)) %> |
+<%
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

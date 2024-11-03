@@ -1,0 +1,34 @@
+<%
+;;;;
+;;;; Documentation Template for a Glossary View
+;;;;
+;;;; config:
+;;;;  :per-element true
+;;;;  :id-as-name  true
+;;;;
+
+(let [elements (v/view-elements model e)
+      nodes (filter m/model-node? elements)]     
+%># <%= (:title e)%>
+
+## Description
+<%= (:desc e) %>
+<%
+  (when (:doc e)
+%>
+## Documentation
+<%= (:doc e) %>
+<%
+  )
+%>
+## Entries
+<%
+  (doseq [concept (sort-by #(str/capitalize (:name %)) nodes)]
+%>### <%= (md/relative-element-link e concept) %>
+<%= (:desc concept) %>
+<%
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

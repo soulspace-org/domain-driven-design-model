@@ -1,0 +1,63 @@
+<%
+;;;;
+;;;; Documentation Template for a Packages
+;;;;
+;;;; config:
+;;;;  :per-element true
+;;;;  :id-as-name  true
+;;;;
+
+(let [children (sort-by :name (map (partial m/resolve-element model) (m/children model e)))
+      packages  (filter #(= :package (:el %)) children)
+      interfaces (filter #(= :interface (:el %)) children)
+      classes (filter #(= :class (:el %)) children)]
+
+%># <%= (:name e) %> (<%= (m/element-type e) %>)
+
+# Description
+<%= (:desc e) %>
+
+<%
+  (when (:doc e)
+%>## Documentation
+<%= (:doc e) %>
+<%
+  )
+
+  (when (seq packages)
+%>
+## Packages
+| Name | Description |
+|---|---|
+<%
+    (doseq [package (sort-by :name package)]
+%>|<%= (md/relative-element-link e package) %>|<%= (t/single-line (:desc package)) %>|
+<%
+    )
+  )
+  (when (seq interfaces)
+%>
+## Interfaces
+| Name | Description |
+|---|---|
+<%
+    (doseq [interface (sort-by :name interfaces)]
+%>|<%= (md/relative-element-link e interface) %>|<%= (t/single-line (:desc interface)) %>|
+<%
+    )
+  )
+  (when (seq classes)
+%>
+## Classes
+| Name | Description |
+|---|---|
+<%
+    (doseq [class (sort-by :name classes)]
+%>|<%= (md/relative-element-link e class) %>|<%= (t/single-line (:desc class)) %>|
+<%
+    )
+  )
+)
+%>
+
+(generated with <%= (:template ctx) %>)

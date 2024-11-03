@@ -1,0 +1,78 @@
+digraph "Concept Map of the Domain Driven Design Patterns" {
+labelloc= "t"
+label="Concept Map of the Domain Driven Design Patterns"
+rankdir="LR"
+
+ddd_cAbstractCore[label="Abstract Core", style="filled", fillcolor="#dddddd"];
+ddd_cAggregates[label="Aggregates", style="filled", fillcolor="#dddddd"];
+ddd_cAntiCorruptionLayer[label="Anti-Corruption Layer", style="filled", fillcolor="#dddddd"];
+ddd_cBigBallOfMud[label="Big Ball of Mud", style="filled", fillcolor="#dddddd"];
+ddd_cBoundedContext[label="Bounded Context", style="filled", fillcolor="#dddddd"];
+ddd_cCleanArchitecture[label="Clean Architecture", style="filled", fillcolor="#dddddd"];
+ddd_cCohesiveMechanisms[label="Cohesive Mechanisms", style="filled", fillcolor="#dddddd"];
+ddd_cConformist[label="Conformist", style="filled", fillcolor="#dddddd"];
+ddd_cContext[label="Context", style="filled", fillcolor="#dddddd"];
+ddd_cContextMap[label="Context Map", style="filled", fillcolor="#dddddd"];
+ddd_cContinuousIntegration[label="Continuous Integration", style="filled", fillcolor="#dddddd"];
+ddd_cCoreDomain[label="Core Domain", style="filled", fillcolor="#dddddd"];
+ddd_cCustomerSupplier[label="Customer/Supplier", style="filled", fillcolor="#dddddd"];
+ddd_cDomain[label="Domain", style="filled", fillcolor="#dddddd"];
+ddd_cDomainEvents[label="Domain Events", style="filled", fillcolor="#dddddd"];
+ddd_cDomainVisionStatement[label="Domain Vision Statement", style="filled", fillcolor="#dddddd"];
+ddd_cEntities[label="Entities", style="filled", fillcolor="#dddddd"];
+ddd_cEvolvingOrder[label="Evolving Order", style="filled", fillcolor="#dddddd"];
+ddd_cFactories[label="Factories", style="filled", fillcolor="#dddddd"];
+ddd_cGenericSubdomains[label="Generic Subdomains", style="filled", fillcolor="#dddddd"];
+ddd_cHandsOnModellers[label="Hands On Modellers", style="filled", fillcolor="#dddddd"];
+ddd_cHighlightedCore[label="Highlighted Core", style="filled", fillcolor="#dddddd"];
+ddd_cKnowledgeLevel[label="Knowledge-level", style="filled", fillcolor="#dddddd"];
+ddd_cLargeScaleStructure[label="Large Scale Structure", style="filled", fillcolor="#dddddd"];
+ddd_cLayeredArchtecture[label="Layered Architecture", style="filled", fillcolor="#dddddd"];
+ddd_cModel[label="Model", style="filled", fillcolor="#dddddd"];
+ddd_cModelDrivenDesign[label="Model Driven Design", style="filled", fillcolor="#dddddd"];
+ddd_cModules[label="Modules", style="filled", fillcolor="#dddddd"];
+ddd_cOpenHostService[label="Open Host Service", style="filled", fillcolor="#dddddd"];
+ddd_cPartnership[label="Partnership", style="filled", fillcolor="#dddddd"];
+ddd_cPluggableComponentFramework[label="Pluggable Component Framework", style="filled", fillcolor="#dddddd"];
+ddd_cPublishedLanguage[label="Published Language", style="filled", fillcolor="#dddddd"];
+ddd_cRepositories[label="Repositories", style="filled", fillcolor="#dddddd"];
+ddd_cResponsibilityLayers[label="Responsibility Layers", style="filled", fillcolor="#dddddd"];
+ddd_cSegregatedCore[label="Segregated Core", style="filled", fillcolor="#dddddd"];
+ddd_cSeparateWays[label="Separate Ways", style="filled", fillcolor="#dddddd"];
+ddd_cServices[label="Services", style="filled", fillcolor="#dddddd"];
+ddd_cSharedKernel[label="Shared Kernel", style="filled", fillcolor="#dddddd"];
+ddd_cSystemMetaphor[label="System Metaphor", style="filled", fillcolor="#dddddd"];
+ddd_cUbiquitousLanguage[label="Ubiquitous Language", style="filled", fillcolor="#dddddd"];
+ddd_cValueObjects[label="Value Objects", style="filled", fillcolor="#dddddd"];
+ddd_cAggregates -> ddd_cRepositories [label="access with"];
+ddd_cAggregates -> ddd_cFactories [label="encapsulate with"];
+ddd_cBoundedContext -> ddd_cUbiquitousLanguage [label="names enter"];
+ddd_cBoundedContext -> ddd_cContextMap [label="assess/overview relationships with"];
+ddd_cBoundedContext -> ddd_cContinuousIntegration [label="keep model unified with"];
+ddd_cContextMap -> ddd_cCustomerSupplier [label="coordinate upstream/downstream"];
+ddd_cContextMap -> ddd_cPartnership [label="coordinate interdependent contexts"];
+ddd_cContextMap -> ddd_cSeparateWays [label="free teams to go"];
+ddd_cContextMap -> ddd_cConformist [label="overlap unilaterally as"];
+ddd_cContextMap -> ddd_cSharedKernel [label="overlap contexts"];
+ddd_cContextMap -> ddd_cBigBallOfMud [label="seggregate the conceptual messes"];
+ddd_cContextMap -> ddd_cOpenHostService [label="support multiple clients through"];
+ddd_cContextMap -> ddd_cAntiCorruptionLayer [label="translate and isolate unilaterally with"];
+ddd_cCoreDomain -> ddd_cGenericSubdomains [label="avoid overinvesting in"];
+ddd_cCoreDomain -> ddd_cUbiquitousLanguage [label="culivate rich model with"];
+ddd_cCoreDomain -> ddd_cBoundedContext [label="work in autonomous, clean"];
+ddd_cEntities -> ddd_cRepositories [label="access with"];
+ddd_cEntities -> ddd_cAggregates [label="encapsulate with"];
+ddd_cEntities -> ddd_cFactories [label="encapsulate with"];
+ddd_cEntities -> ddd_cDomainEvents [label="push state change with"];
+ddd_cEntities -> ddd_cAggregates [label="act as root of"];
+ddd_cModelDrivenDesign -> ddd_cDomainEvents [label="express change with"];
+ddd_cModelDrivenDesign -> ddd_cEntities [label="express identity with"];
+ddd_cModelDrivenDesign -> ddd_cServices [label="express model with"];
+ddd_cModelDrivenDesign -> ddd_cValueObjects [label="express state and computation with"];
+ddd_cModelDrivenDesign -> ddd_cCleanArchitecture [label="isolate domain expressions with"];
+ddd_cModelDrivenDesign -> ddd_cUbiquitousLanguage [label="model gives structure to"];
+ddd_cModelDrivenDesign -> ddd_cBoundedContext [label="define model within"];
+ddd_cOpenHostService -> ddd_cPublishedLanguage [label="formalized as"];
+ddd_cValueObjects -> ddd_cAggregates [label="encapsulate with"];
+ddd_cValueObjects -> ddd_cFactories [label="encapsulate with"];
+}
