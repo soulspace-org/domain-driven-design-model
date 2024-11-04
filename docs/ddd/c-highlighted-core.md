@@ -1,4 +1,4 @@
-#Highlighted Core (Concept)
+# Highlighted Core (Concept)
 ## Description
 Describes the core elements of the domain and their interactions.
 ## Documentation

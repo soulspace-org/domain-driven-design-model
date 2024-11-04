@@ -1,4 +1,4 @@
-#Separate Ways (Concept)
+# Separate Ways (Concept)
 ## Description
 A bounded context with no connection to the others at all, allowing
 developers to find simple, specialized solutions within this small scope.

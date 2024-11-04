@@ -1,4 +1,4 @@
-#Context (Concept)
+# Context (Concept)
 ## Description
 The setting in which a word or statement appears that determines its meaning.
 Statements about a model can only be understood in a context.

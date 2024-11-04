@@ -1,4 +1,4 @@
-#Value Objects (Concept)
+# Value Objects (Concept)
 ## Description
 An object in the domain model, which has no conceptional identity but are
 identified by their state. Value objects should be modelled as immutable.

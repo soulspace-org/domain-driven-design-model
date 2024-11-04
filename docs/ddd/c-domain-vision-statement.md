@@ -1,4 +1,4 @@
-#Domain Vision Statement (Concept)
+# Domain Vision Statement (Concept)
 ## Description
 A short description of the core domain and the value it will bring.
 ## Documentation

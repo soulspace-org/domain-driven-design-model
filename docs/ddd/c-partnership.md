@@ -1,4 +1,4 @@
-#Partnership (Concept)
+# Partnership (Concept)
 ## Description
 A partnership between the teams in charge of the two
 contexts, when the teams will succeed or fail together.

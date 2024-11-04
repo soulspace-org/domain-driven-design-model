@@ -1,4 +1,4 @@
-#Generic Subdomains (Concept)
+# Generic Subdomains (Concept)
 ## Description
 A cohesive subdomain that is not the motivation for the project and does
 not capoure specialized knowledge.

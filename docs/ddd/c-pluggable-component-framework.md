@@ -1,4 +1,4 @@
-#Pluggable Component Framework (Concept)
+# Pluggable Component Framework (Concept)
 ## Description
 A framework that allows diverse implementations of those interfaces to be
 freely substituted.

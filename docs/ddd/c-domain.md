@@ -1,4 +1,4 @@
-#Domain (Concept)
+# Domain (Concept)
 ## Description
 A sphere of knowledge, influence or activity.
 The subject area to which a user applies a program is the domain of the software.

@@ -1,4 +1,4 @@
-#Customer/Supplier (Concept)
+# Customer/Supplier (Concept)
 ## Description
 A clear relationship between two teams, where the downstream team is the customer
 of the upstream team.

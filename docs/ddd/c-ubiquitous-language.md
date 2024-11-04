@@ -1,4 +1,4 @@
-#Ubiquitous Language (Concept)
+# Ubiquitous Language (Concept)
 ## Description
 A language around the domain model used by all team members within a
 bounded context to connect all the activities of the team with the software.

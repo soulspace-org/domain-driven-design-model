@@ -1,4 +1,4 @@
-#Abstract Core (Concept)
+# Abstract Core (Concept)
 ## Description
 The most fundamental differentiating concepts in the model, factored
 into distinct classes, abstract classes, or interfaces.

@@ -1,4 +1,4 @@
-#Big Ball of Mud (Concept)
+# Big Ball of Mud (Concept)
 ## Description
 A Big Ball of Mud is a casually, even haphazardly, structured system.
 Its organization, if one can call it that, is dictated more by expediency than

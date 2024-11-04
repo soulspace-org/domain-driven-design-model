@@ -1,4 +1,4 @@
-#Core Domain (Concept)
+# Core Domain (Concept)
 ## Description
 The most valuable part of the domain model.
 ## Documentation

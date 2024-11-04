@@ -1,4 +1,4 @@
-#Domain Events (Concept)
+# Domain Events (Concept)
 ## Description
 A domain object to propagate relevant domain activities in a distributed system.
 ## Documentation

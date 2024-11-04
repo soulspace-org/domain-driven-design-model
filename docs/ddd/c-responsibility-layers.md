@@ -1,4 +1,4 @@
-#Responsibility Layers (Concept)
+# Responsibility Layers (Concept)
 ## Description
 
 ## Documentation

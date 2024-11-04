@@ -1,4 +1,4 @@
-#Bounded Context (Concept)
+# Bounded Context (Concept)
 ## Description
 A descrition of a boundary (typically a subsystem or the work of
 a particular team) within which a particular model is defined and applicable.

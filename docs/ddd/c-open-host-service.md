@@ -1,4 +1,4 @@
-#Open Host Service (Concept)
+# Open Host Service (Concept)
 ## Description
 An open protocol that gives access to your subsystem as a set of services.
 ## Documentation

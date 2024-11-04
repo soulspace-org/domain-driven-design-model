@@ -1,4 +1,4 @@
-#Factories (Concept)
+# Factories (Concept)
 ## Description
 A domain object for the creation of complex domain objects which enforce the
 invariants of these objects on creation.

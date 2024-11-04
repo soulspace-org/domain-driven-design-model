@@ -1,4 +1,4 @@
-#Anti-Corruption Layer (Concept)
+# Anti-Corruption Layer (Concept)
 ## Description
 The anti-corruption layer is an architectural layer to separate the domain
 model from outside models. It enables the domain model to access the data of

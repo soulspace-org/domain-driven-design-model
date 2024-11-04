@@ -1,4 +1,4 @@
-#Layered Architecture (Concept)
+# Layered Architecture (Concept)
 ## Description
 Isolates the expression of the domain model and the business logic, and
 eliminates any dependency on infrastructure, user interface, or application logic

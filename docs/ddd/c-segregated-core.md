@@ -1,4 +1,4 @@
-#Segregated Core (Concept)
+# Segregated Core (Concept)
 ## Description
 
 ## Documentation

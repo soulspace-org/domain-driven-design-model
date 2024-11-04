@@ -1,4 +1,4 @@
-#Continuous Integration (Concept)
+# Continuous Integration (Concept)
 ## Description
 A process of merging all code and other implementation artifacts
 frequently, with automated tests to flag fragmentation quickly.

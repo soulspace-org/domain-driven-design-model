@@ -1,4 +1,4 @@
-#Evolving Order (Concept)
+# Evolving Order (Concept)
 ## Description
 A conceptual large-scale structure that evolves with the application, possibly
 changing to a completely different type of structure along the way.

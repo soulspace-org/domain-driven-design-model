@@ -1,4 +1,4 @@
-#Model (Concept)
+# Model (Concept)
 ## Description
 A system of abstractions that describes selected aspects of a domain
 and can be used to solve problems related to that domain.

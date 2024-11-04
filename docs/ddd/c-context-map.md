@@ -1,4 +1,4 @@
-#Context Map (Concept)
+# Context Map (Concept)
 ## Description
  The context map provides an overview for all models and their boundaries and
 interfaces.

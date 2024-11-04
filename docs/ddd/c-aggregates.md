@@ -1,4 +1,4 @@
-#Aggregates (Concept)
+# Aggregates (Concept)
 ## Description
 Aggregates are collections of entities and value objects with their
 associations and form a transactional unit. Aggregates are referenced as a

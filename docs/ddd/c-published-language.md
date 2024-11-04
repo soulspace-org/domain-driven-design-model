@@ -1,4 +1,4 @@
-#Published Language (Concept)
+# Published Language (Concept)
 ## Description
 A well-documented shared language that can express the necessary domain
 information as a common medium of communication, translating as necessary into

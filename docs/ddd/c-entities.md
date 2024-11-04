@@ -1,4 +1,4 @@
-#Entities (Concept)
+# Entities (Concept)
 ## Description
 Objects in the domain model which are defined by their identity rather than
 by their state. For example a Person is normally modelled as an entity. It
