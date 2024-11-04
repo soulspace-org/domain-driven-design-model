@@ -1,7 +1,8 @@
 ;;;;
 ;;;; Example for Domain Driven Design with a Hexagonal Architecture
 ;;;;
-#{;;;
+#{;
+  ;;;
   ;;; Concept Model Views
   ;;;
   {:el :concept-view
@@ -13,7 +14,7 @@
           :markdown {:references true}}
    :name "Concept Map"
    :title "Concept Map of the Domain Driven Design Patterns"
-   :desc "Shows the concepts and their relations"
+   :desc "Shows the concepts and their relations."
    :ct []}
 
   {:el :glossary-view
@@ -22,7 +23,7 @@
           :markdown {:references true}}
    :name "Glossary"
    :title "Glossary of the Domain Driven Design Patterns"
-   :desc "Shows all relevant patterns with a description"
+   :desc "Shows all relevant patterns with a description."
    :ct []}
 
   ;
