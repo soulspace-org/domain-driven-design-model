@@ -25,7 +25,10 @@ In a clean architecture, an adapter is the place to implement the anti-
 corruption layer by mapping the outside model to the domain model.
 
 ### [Big Ball of Mud](../ddd/c-big-ball-of-mud.md)
-
+A Big Ball of Mud is a casually, even haphazardly, structured system.
+Its organization, if one can call it that, is dictated more by expediency than
+design. Yet, its enduring popularity cannot merely be indicative of a general
+disregard for architecture.
 
 ### [Bounded Context](../ddd/c-bounded-context.md)
 A descrition of a boundary (typically a subsystem or the work of
@@ -49,23 +52,25 @@ Statements about a model can only be understood in a context.
 interfaces.
 
 ### [Continuous Integration](../ddd/c-continuous-integration.md)
-
+A process of merging all code and other implementation artifacts
+frequently, with automated tests to flag fragmentation quickly.
 
 ### [Core Domain](../ddd/c-core-domain.md)
-
+The most valuable part of the domain model.
 
 ### [Customer/Supplier](../ddd/c-customer-supplier.md)
-
+A clear relationship between two teams, where the downstream team is the customer
+of the upstream team.
 
 ### [Domain](../ddd/c-domain.md)
 A sphere of knowledge, influence or activity.
 The subject area to which a user applies a program is the domain of the software.
 
 ### [Domain Events](../ddd/c-domain-events.md)
-
+A domain object to propagate relevant domain activities in a distributed system.
 
 ### [Domain Vision Statement](../ddd/c-domain-vision-statement.md)
-
+A short description of the core domain and the value it will bring.
 
 ### [Entities](../ddd/c-entities.md)
 Objects in the domain model which are defined by their identity rather than
@@ -74,22 +79,26 @@ represents the same person even when the attributes change. It is also a
 different person, even if it has the same state as another person.
 
 ### [Evolving Order](../ddd/c-evolving-order.md)
-
+A conceptual large-scale structure that evolves with the application, possibly
+changing to a completely different type of structure along the way.
 
 ### [Factories](../ddd/c-factories.md)
-
+A domain object for the creation of complex domain objects which enforce the
+invariants of these objects on creation.
 
 ### [Generic Subdomains](../ddd/c-generic-subdomains.md)
-
+A cohesive subdomain that is not the motivation for the project and does
+not capoure specialized knowledge.
 
 ### [Hands On Modellers](../ddd/c-hands-on-modellers.md)
-
+Developers must be involved with the model and have contact with domain experts.
 
 ### [Highlighted Core](../ddd/c-highlighted-core.md)
-
+Describes the core elements of the domain and their interactions.
 
 ### [Knowledge-level](../ddd/c-knowledge-level.md)
-
+A distinct set of objects that can be used to describe and constrain the
+structure and behavior of the basic model.
 
 ### [Large Scale Structure](../ddd/c-large-scale-structure.md)
 

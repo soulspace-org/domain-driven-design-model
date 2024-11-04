@@ -1,6 +1,7 @@
 #Continuous Integration (Concept)
 ## Description
-
+A process of merging all code and other implementation artifacts
+frequently, with automated tests to flag fragmentation quickly.
 ## Documentation
 Once a bounded context has been defined, we must keep it sound. When a number
 of people are working in the same bounded context, there is a strong tendency

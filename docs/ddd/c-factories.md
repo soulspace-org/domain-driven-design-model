@@ -1,6 +1,7 @@
 #Factories (Concept)
 ## Description
-
+A domain object for the creation of complex domain objects which enforce the
+invariants of these objects on creation.
 ## Documentation
 When creation of an object, or an entire AGGREGATE, becomes complicated or
 reveals too much of the internal structure, FACTORIES provide encapsulation.

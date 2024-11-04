@@ -1,6 +1,9 @@
 #Big Ball of Mud (Concept)
 ## Description
-
+A Big Ball of Mud is a casually, even haphazardly, structured system.
+Its organization, if one can call it that, is dictated more by expediency than
+design. Yet, its enduring popularity cannot merely be indicative of a general
+disregard for architecture.
 ## Documentation
 As we survey existing software systems, trying to understand how distinct
 models are being applied within defined boundaries, we find parts of systems,

@@ -1,6 +1,7 @@
 #Evolving Order (Concept)
 ## Description
-
+A conceptual large-scale structure that evolves with the application, possibly
+changing to a completely different type of structure along the way.
 ## Documentation
 Design free-for-alls produce systems no one can make sense of as a whole, and
 they are very difficult to maintain. But architectures can straitjacket a
@@ -13,7 +14,7 @@ development.
 Therefore:
 
 Let this conceptual large-scale structure evolve with the application, possibly
-changing to a completely different type of structure along the way. Don’t over
+changing to a completely different type of structure along the way. Don't over
 constrain the detailed design and model decisions that must be made with
 detailed knowledge.
 

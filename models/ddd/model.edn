@@ -87,7 +87,7 @@ a more defensive tone.
 
 A large interface with an upstream system can eventually overwhelm the intent
 of the downstream model altogether, causing it to be modified to resemble the
-other system’s model in an ad hoc fashion. The models of legacy systems are
+other system's model in an ad hoc fashion. The models of legacy systems are
 usually weak (if not big balls of mud), and even the exception that is clearly
 designed may not fit the needs of the current project, making it impractical to
 conform to the upstream model. Yet the integration may be very valuable or even
@@ -105,7 +105,10 @@ in one or both directions as necessary between the two models."}
    :id :ddd/c-big-ball-of-mud
    :tags #{"Pattern"}
    :name "Big Ball of Mud"
-   :desc ""
+   :desc "A Big Ball of Mud is a casually, even haphazardly, structured system.
+Its organization, if one can call it that, is dictated more by expediency than
+design. Yet, its enduring popularity cannot merely be indicative of a general
+disregard for architecture."
    :doc "As we survey existing software systems, trying to understand how distinct
 models are being applied within defined boundaries, we find parts of systems,
 often large ones, where models are mixed and boundaries are inconsistent.
@@ -266,7 +269,8 @@ pages, with a set of common patterns of relationships between bounded contexts."
    :id :ddd/c-continuous-integration
    :tags #{"Pattern"}
    :name "Continuous Integration"
-   :desc ""
+   :desc "A process of merging all code and other implementation artifacts
+frequently, with automated tests to flag fragmentation quickly."
    :doc "Once a bounded context has been defined, we must keep it sound. When a number
 of people are working in the same bounded context, there is a strong tendency
 for the model to fragment.
@@ -285,7 +289,7 @@ the model as the concepts evolve in different people's heads."}
    :id :ddd/c-core-domain
    :tags #{"Pattern"}
    :name "Core Domain"
-   :desc ""
+   :desc "The most valuable part of the domain model."
    :doc "In a large system, there are so many contributing components, all complicated
 and all absolutely necessary to success, that the essence of the domain model,
 the real business asset, can be obscured and neglected.
@@ -313,7 +317,8 @@ Justify investment in any other part by how it supports the distilled core."}
    :id :ddd/c-customer-supplier
    :tags #{"Pattern"}
    :name "Customer/Supplier"
-   :desc ""
+   :desc "A clear relationship between two teams, where the downstream team is the customer
+of the upstream team."
    :doc "When two teams are in an upstream-downstream relationship, where the upstream
 team may succeed independently of the fate of the downstream team, the needs of
 the downstream come to be addressed in a variety of ways with a wide range of
@@ -354,7 +359,7 @@ The subject area to which a user applies a program is the domain of the software
    :id :ddd/c-domain-events
    :tags #{"Pattern"}
    :name "Domain Events"
-   :desc ""
+   :desc "A domain object to propagate relevant domain activities in a distributed system."
    :doc "Something happened that domain experts care about.
 
 An entity is responsible for tracking its state and the rules regulating its
@@ -405,7 +410,7 @@ same."}
    :id :ddd/c-domain-vision-statement
    :tags #{"Pattern"}
    :name "Domain Vision Statement"
-   :desc ""
+   :desc "A short description of the core domain and the value it will bring."
    :doc "At the beginning of a project, the model usually doesn't even exist, yet the
 need to focus its development is already there. In later stages of development,
 there is a need for an explanation of the value of the system that does not
@@ -460,7 +465,8 @@ The model must define what it means to be the same thing."}
    :id :ddd/c-evolving-order
    :tags #{"Pattern"}
    :name "Evolving Order"
-   :desc ""
+   :desc "A conceptual large-scale structure that evolves with the application, possibly
+changing to a completely different type of structure along the way."
    :doc "Design free-for-alls produce systems no one can make sense of as a whole, and
 they are very difficult to maintain. But architectures can straitjacket a
 project with up-front design assumptions and take too much power away from the
@@ -472,7 +478,7 @@ development.
 Therefore:
 
 Let this conceptual large-scale structure evolve with the application, possibly
-changing to a completely different type of structure along the way. Don’t over
+changing to a completely different type of structure along the way. Don't over
 constrain the detailed design and model decisions that must be made with
 detailed knowledge.
 
@@ -489,7 +495,8 @@ emerge on some projects and are representative of this kind of pattern."}
    :id :ddd/c-factories
    :tags #{"Pattern"}
    :name "Factories"
-   :desc ""
+   :desc "A domain object for the creation of complex domain objects which enforce the
+invariants of these objects on creation."
    :doc "When creation of an object, or an entire AGGREGATE, becomes complicated or
 reveals too much of the internal structure, FACTORIES provide encapsulation.
 
@@ -513,7 +520,8 @@ AGGREGATES as a piece, enforcing their invariants."}
    :id :ddd/c-generic-subdomains
    :tags #{"Pattern"}
    :name "Generic Subdomains"
-   :desc ""
+   :desc "A cohesive subdomain that is not the motivation for the project and does
+not capoure specialized knowledge."
    :doc "Some parts of the model add complexity without capturing or communicating
 specialized knowledge. Anything extraneous makes the core domain harder to
 discern and understand. The model clogs up with general principles everyone
@@ -537,7 +545,7 @@ off-the-shelf solutions or published models for these generic subdomains."}
    :id :ddd/c-hands-on-modellers
    :tags #{"Pattern"}
    :name "Hands On Modellers"
-   :desc ""
+   :desc "Developers must be involved with the model and have contact with domain experts."
    :doc "If the people who write the code do not feel responsible for the model, or
 don't understand how to make the model work for an application, then the model
 has nothing to do with the software. If developers don't realize that changing
@@ -567,7 +575,7 @@ ideas through the UBIQUITOUS LANGUAGE."}
    :id :ddd/c-highlighted-core
    :tags #{"Pattern"}
    :name "Highlighted Core"
-   :desc ""
+   :desc "Describes the core elements of the domain and their interactions."
    :doc "A domain vision statement identifies the core domain in broad terms, but it
 leaves the identification of the specific core model elements up to the
 vagaries of individual interpretation. Unless there is an exceptionally high
@@ -618,12 +626,13 @@ core domain more visible and manageable."}
    :id :ddd/c-knowledge-level
    :tags #{"Pattern"}
    :name "Knowledge-level"
-   :desc ""
+   :desc "A distinct set of objects that can be used to describe and constrain the
+structure and behavior of the basic model."
    :doc "A group of objects that describe how another group of objects should behave.
 
 In an application in which the roles and relationships between entities vary in
 different situations, complexity can explode. Neither fully general models nor
-highly customized ones serve the users’ needs. Objects end up with references
+highly customized ones serve the users' needs. Objects end up with references
 to other types to cover a variety of cases, or with attributes that are used in
 different ways in different situations. Classes that have the same data and
 behavior may multiply just to accommodate different assembly rules.

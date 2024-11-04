@@ -1,6 +1,6 @@
 #Domain Events (Concept)
 ## Description
-
+A domain object to propagate relevant domain activities in a distributed system.
 ## Documentation
 Something happened that domain experts care about.
 

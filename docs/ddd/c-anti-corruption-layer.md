@@ -14,7 +14,7 @@ a more defensive tone.
 
 A large interface with an upstream system can eventually overwhelm the intent
 of the downstream model altogether, causing it to be modified to resemble the
-other system’s model in an ad hoc fashion. The models of legacy systems are
+other system's model in an ad hoc fashion. The models of legacy systems are
 usually weak (if not big balls of mud), and even the exception that is clearly
 designed may not fit the needs of the current project, making it impractical to
 conform to the upstream model. Yet the integration may be very valuable or even

@@ -1,6 +1,6 @@
 #Domain Vision Statement (Concept)
 ## Description
-
+A short description of the core domain and the value it will bring.
 ## Documentation
 At the beginning of a project, the model usually doesn't even exist, yet the
 need to focus its development is already there. In later stages of development,

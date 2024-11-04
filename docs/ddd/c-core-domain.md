@@ -1,6 +1,6 @@
 #Core Domain (Concept)
 ## Description
-
+The most valuable part of the domain model.
 ## Documentation
 In a large system, there are so many contributing components, all complicated
 and all absolutely necessary to success, that the essence of the domain model,

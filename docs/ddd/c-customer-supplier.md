@@ -1,6 +1,7 @@
 #Customer/Supplier (Concept)
 ## Description
-
+A clear relationship between two teams, where the downstream team is the customer
+of the upstream team.
 ## Documentation
 When two teams are in an upstream-downstream relationship, where the upstream
 team may succeed independently of the fate of the downstream team, the needs of

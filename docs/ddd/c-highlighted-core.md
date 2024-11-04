@@ -1,6 +1,6 @@
 #Highlighted Core (Concept)
 ## Description
-
+Describes the core elements of the domain and their interactions.
 ## Documentation
 A domain vision statement identifies the core domain in broad terms, but it
 leaves the identification of the specific core model elements up to the

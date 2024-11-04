@@ -1,6 +1,7 @@
 #Generic Subdomains (Concept)
 ## Description
-
+A cohesive subdomain that is not the motivation for the project and does
+not capoure specialized knowledge.
 ## Documentation
 Some parts of the model add complexity without capturing or communicating
 specialized knowledge. Anything extraneous makes the core domain harder to
