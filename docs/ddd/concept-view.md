@@ -8,7 +8,8 @@ Shows the concepts and their relations.
 
 ## Concepts
 ### [Abstract Core](../ddd/c-abstract-core.md)
-
+The most fundamental differentiating concepts in the model, factored
+into distinct classes, abstract classes, or interfaces.
 
 ### [Aggregates](../ddd/c-aggregates.md)
 Aggregates are collections of entities and value objects with their
@@ -144,7 +145,8 @@ and out of that language.
 
 
 ### [Separate Ways](../ddd/c-separate-ways.md)
-
+A bounded context with no connection to the others at all, allowing
+developers to find simple, specialized solutions within this small scope.
 
 ### [Services](../ddd/c-services.md)
 

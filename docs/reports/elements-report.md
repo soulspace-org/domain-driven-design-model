@@ -14,6 +14,7 @@
  :ddd/c-pluggable-component-framework | Pluggable Component Framework | :concept |  | A framework that allows diverse implementations of those interfaces to be freely substituted. |  | #{"Pattern"}
  :ddd/c-generic-subdomains | Generic Subdomains | :concept |  | A cohesive subdomain that is not the motivation for the project and does not capoure specialized knowledge. |  | #{"Pattern"}
  :ddd/c-entities-push-change-with-c-domain-events | push state change with | :rel |  |  |  | 
+ :ddd/c-abstract-core | Abstract Core | :concept |  | The most fundamental differentiating concepts in the model, factored into distinct classes, abstract classes, or interfaces. |  | #{"Pattern"}
  :ddd/c-bounded-context-overview-with-c-context-map | assess/overview relationships with | :rel |  |  |  | 
  :ddd/c-published-language | Published Language | :concept |  | A well-documented shared language that can express the necessary domain information as a common medium of communication, translating as necessary into and out of that language. |  | #{"Pattern"}
  :ddd/c-customer-supplier | Customer/Supplier | :concept |  | A clear relationship between two teams, where the downstream team is the customer of the upstream team. |  | #{"Pattern"}
@@ -35,6 +36,7 @@
  :ddd/c-model-driven-design | Model Driven Design | :concept |  |  |  | #{"Pattern"}
  :ddd/c-value-objects-encapsulate-with-c-factories | encapsulate with | :rel |  |  |  | 
  :ddd/c-repositories | Repositories | :concept |  |  |  | #{"Pattern"}
+ :ddd/c-separate-ways | Separate Ways | :concept |  | A bounded context with no connection to the others at all, allowing developers to find simple, specialized solutions within this small scope. |  | #{"Pattern"}
  :ddd/c-model-driven-design-express-with-c-entities | express identity with | :rel |  |  |  | 
  :ddd/c-open-host-service-formalized-as-c-published-language | formalized as | :rel |  |  |  | 
  :ddd/c-continuous-integration | Continuous Integration | :concept |  | A process of merging all code and other implementation artifacts frequently, with automated tests to flag fragmentation quickly. |  | #{"Pattern"}
@@ -44,11 +46,9 @@
  :ddd/c-model | Model | :concept |  | A system of abstractions that describes selected aspects of a domain and can be used to solve problems related to that domain. |  | #{"Pattern"}
  :ddd/c-context-map-overlap-c-conformist | overlap unilaterally as | :rel |  |  |  | 
  :ddd/c-entities-access-with-c-repositories | access with | :rel |  |  |  | 
- :ddd/c-separate-ways | Separate Ways | :concept |  |  |  | #{"Pattern"}
  :ddd/c-aggregates-access-with-c-repositories | access with | :rel |  |  |  | 
  :ddd/c-entities-encapsulate-with-c-factories | encapsulate with | :rel |  |  |  | 
  :ddd/c-model-driven-design-isolate-with-c-hexagonal-architecture | isolate domain expressions with | :rel |  |  |  | 
- :ddd/c-abstract-core | Abstract Core | :concept |  |  |  | #{"Pattern"}
  :ddd/c-model-driven-design-within-c-bounded-context | define model within | :rel |  |  |  | 
  :ddd/c-clean-architecture | Clean Architecture | :concept |  |  |  | #{"Pattern"}
  :ddd/c-context-map | Context Map | :concept |  | The context map provides an overview for all models and their boundaries and interfaces. |  | #{"Pattern"}

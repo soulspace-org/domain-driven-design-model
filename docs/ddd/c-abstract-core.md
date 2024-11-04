@@ -1,6 +1,7 @@
 #Abstract Core (Concept)
 ## Description
-
+The most fundamental differentiating concepts in the model, factored
+into distinct classes, abstract classes, or interfaces.
 ## Documentation
 Even the core domain model usually has so much detail that communicating the
 big picture can be difficult.
