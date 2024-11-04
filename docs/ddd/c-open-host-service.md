@@ -1,6 +1,6 @@
 #Open Host Service (Concept)
 ## Description
-
+An open protocol that gives access to your subsystem as a set of services.
 ## Documentation
 Typically for each bounded context, you will define a translation layer for
 each component with which you have to integrate that is outside the context.

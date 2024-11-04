@@ -1,7 +1,7 @@
 # Glossary of the Domain Driven Design Patterns
 
 ## Description
-Shows all relevant patterns with a description
+Shows all relevant patterns with a description.
 
 ## Entries
 ### [Abstract Core](../ddd/c-abstract-core.md)
@@ -77,7 +77,9 @@ structure and behavior of the basic model.
 ### [Large Scale Structure](../ddd/c-large-scale-structure.md)
 
 ### [Layered Architecture](../ddd/c-layered-archtecture.md)
-
+Isolates the expression of the domain model and the business logic, and
+eliminates any dependency on infrastructure, user interface, or application logic
+that is not business logic.
 ### [Model](../ddd/c-model.md)
 A system of abstractions that describes selected aspects of a domain
 and can be used to solve problems related to that domain.
@@ -86,13 +88,17 @@ and can be used to solve problems related to that domain.
 ### [Modules](../ddd/c-modules.md)
 
 ### [Open Host Service](../ddd/c-open-host-service.md)
-
+An open protocol that gives access to your subsystem as a set of services.
 ### [Partnership](../ddd/c-partnership.md)
-
+A partnership between the teams in charge of the two
+contexts, when the teams will succeed or fail together.
 ### [Pluggable Component Framework](../ddd/c-pluggable-component-framework.md)
-
+A framework that allows diverse implementations of those interfaces to be
+freely substituted.
 ### [Published Language](../ddd/c-published-language.md)
-
+A well-documented shared language that can express the necessary domain
+information as a common medium of communication, translating as necessary into
+and out of that language.
 ### [Repositories](../ddd/c-repositories.md)
 
 ### [Responsibility Layers](../ddd/c-responsibility-layers.md)

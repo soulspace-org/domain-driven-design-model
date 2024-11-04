@@ -1,6 +1,8 @@
 #Layered Architecture (Concept)
 ## Description
-
+Isolates the expression of the domain model and the business logic, and
+eliminates any dependency on infrastructure, user interface, or application logic
+that is not business logic.
 ## Documentation
 In an object-oriented program, UI, database, and other support code often gets
 written directly into the business objects. Additional business logic is

@@ -1,6 +1,8 @@
 #Published Language (Concept)
 ## Description
-
+A well-documented shared language that can express the necessary domain
+information as a common medium of communication, translating as necessary into
+and out of that language.
 ## Documentation
 The translation between the models of two bounded contexts requires a common
 language.

@@ -1,6 +1,7 @@
 #Pluggable Component Framework (Concept)
 ## Description
-
+A framework that allows diverse implementations of those interfaces to be
+freely substituted.
 ## Documentation
 Opportunities arise in a very mature model that is deep and distilled. A
 pluggable component framework usually only comes into play after a few

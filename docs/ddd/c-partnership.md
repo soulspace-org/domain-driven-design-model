@@ -1,6 +1,7 @@
 #Partnership (Concept)
 ## Description
-
+A partnership between the teams in charge of the two
+contexts, when the teams will succeed or fail together.
 ## Documentation
 When teams in two contexts will succeed or fail together, a cooperative
 relationship often emerges.

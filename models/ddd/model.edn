@@ -679,7 +679,9 @@ defined by subdomain."}
    :id :ddd/c-layered-archtecture
    :tags #{"Pattern"}
    :name "Layered Architecture"
-   :desc ""
+   :desc "Isolates the expression of the domain model and the business logic, and
+eliminates any dependency on infrastructure, user interface, or application logic
+that is not business logic."
    :doc "In an object-oriented program, UI, database, and other support code often gets
 written directly into the business objects. Additional business logic is
 embedded in the behavior of UI widgets and database scripts. This happens
@@ -790,7 +792,7 @@ is decoupled as well."}
    :id :ddd/c-open-host-service
    :tags #{"Pattern"}
    :name "Open Host Service"
-   :desc ""
+   :desc "An open protocol that gives access to your subsystem as a set of services."
    :doc "Typically for each bounded context, you will define a translation layer for
 each component with which you have to integrate that is outside the context.
 Where integration is one-off, this approach of inserting a translation layer
@@ -820,7 +822,8 @@ sort of relationship to contexts other than its clients."}
    :id :ddd/c-partnership
    :tags #{"Pattern"}
    :name "Partnership"
-   :desc ""
+   :desc "A partnership between the teams in charge of the two
+contexts, when the teams will succeed or fail together."
    :doc "When teams in two contexts will succeed or fail together, a cooperative
 relationship often emerges.
 
@@ -859,7 +862,8 @@ server system."}
    :id :ddd/c-pluggable-component-framework
    :tags #{"Pattern"}
    :name "Pluggable Component Framework"
-   :desc ""
+   :desc "A framework that allows diverse implementations of those interfaces to be
+freely substituted."
    :doc "Opportunities arise in a very mature model that is deep and distilled. A
 pluggable component framework usually only comes into play after a few
 applications have already been implemented in the same domain.
@@ -881,7 +885,9 @@ as it operates strictly through the interfaces of the abstract core."}
    :id :ddd/c-published-language
    :tags #{"Pattern"}
    :name "Published Language"
-   :desc ""
+   :desc "A well-documented shared language that can express the necessary domain
+information as a common medium of communication, translating as necessary into
+and out of that language."
    :doc "The translation between the models of two bounded contexts requires a common
 language.
 
