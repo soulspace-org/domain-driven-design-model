@@ -209,6 +209,11 @@
   :per-element true
   :id-as-name true
   :extension "md"}
+ {:view-selection {:el :model-view}
+  :template "docs/views/model-view.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
 
  ;;;
  ;;; Markdown Reports
