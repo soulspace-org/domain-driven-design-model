@@ -1,6 +1,7 @@
 # Model Driven Design (Concept)
 ## Description
 
+
 ## Documentation
 Tightly relating the code to an underlying model gives the code meaning and
 makes the model relevant.
@@ -30,7 +31,14 @@ object-oriented programming.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

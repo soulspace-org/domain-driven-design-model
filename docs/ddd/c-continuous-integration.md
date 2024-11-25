@@ -2,6 +2,7 @@
 ## Description
 A process of merging all code and other implementation artifacts
 frequently, with automated tests to flag fragmentation quickly.
+
 ## Documentation
 Once a bounded context has been defined, we must keep it sound. When a number
 of people are working in the same bounded context, there is a strong tendency
@@ -19,7 +20,14 @@ the model as the concepts evolve in different people's heads.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

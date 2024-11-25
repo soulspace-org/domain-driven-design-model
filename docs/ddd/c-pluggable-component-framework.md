@@ -2,6 +2,7 @@
 ## Description
 A framework that allows diverse implementations of those interfaces to be
 freely substituted.
+
 ## Documentation
 Opportunities arise in a very mature model that is deep and distilled. A
 pluggable component framework usually only comes into play after a few
@@ -22,7 +23,14 @@ as it operates strictly through the interfaces of the abstract core.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

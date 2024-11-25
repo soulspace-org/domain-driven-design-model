@@ -1,6 +1,7 @@
 # Open Host Service (Concept)
 ## Description
 An open protocol that gives access to your subsystem as a set of services.
+
 ## Documentation
 Typically for each bounded context, you will define a translation layer for
 each component with which you have to integrate that is outside the context.
@@ -29,7 +30,14 @@ sort of relationship to contexts other than its clients.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

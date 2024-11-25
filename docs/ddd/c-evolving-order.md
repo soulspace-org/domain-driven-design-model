@@ -2,6 +2,7 @@
 ## Description
 A conceptual large-scale structure that evolves with the application, possibly
 changing to a completely different type of structure along the way.
+
 ## Documentation
 Design free-for-alls produce systems no one can make sense of as a whole, and
 they are very difficult to maintain. But architectures can straitjacket a
@@ -29,7 +30,14 @@ emerge on some projects and are representative of this kind of pattern.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

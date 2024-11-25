@@ -1,6 +1,7 @@
 # Services (Concept)
 ## Description
 
+
 ## Documentation
 Sometimes, it just isn't a thing.
 
@@ -20,7 +21,14 @@ Give the service a name, which also becomes part of the ubiquitous language.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

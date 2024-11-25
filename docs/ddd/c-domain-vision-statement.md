@@ -1,6 +1,7 @@
 # Domain Vision Statement (Concept)
 ## Description
 A short description of the core domain and the value it will bring.
+
 ## Documentation
 At the beginning of a project, the model usually doesn't even exist, yet the
 need to focus its development is already there. In later stages of development,
@@ -19,7 +20,14 @@ revise it as you gain new insight.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

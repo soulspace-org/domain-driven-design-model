@@ -1,6 +1,7 @@
 # Hands On Modellers (Concept)
 ## Description
 Developers must be involved with the model and have contact with domain experts.
+
 ## Documentation
 If the people who write the code do not feel responsible for the model, or
 don't understand how to make the model work for an application, then the model
@@ -29,7 +30,14 @@ ideas through the UBIQUITOUS LANGUAGE.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

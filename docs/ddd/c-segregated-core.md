@@ -1,6 +1,7 @@
 # Segregated Core (Concept)
 ## Description
 
+
 ## Documentation
 Elements in the model may partially serve the core domain and partially play
 supporting roles. Core elements may be tightly coupled to generic ones. The
@@ -18,7 +19,14 @@ means refactoring the model in ways that separate highly coupled elements.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

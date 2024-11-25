@@ -2,6 +2,7 @@
 ## Description
 A domain object for the creation of complex domain objects which enforce the
 invariants of these objects on creation.
+
 ## Documentation
 When creation of an object, or an entire AGGREGATE, becomes complicated or
 reveals too much of the internal structure, FACTORIES provide encapsulation.
@@ -24,7 +25,14 @@ AGGREGATES as a piece, enforcing their invariants.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

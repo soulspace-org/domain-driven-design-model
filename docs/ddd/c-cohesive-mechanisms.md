@@ -1,6 +1,7 @@
 # Cohesive Mechanisms (Concept)
 ## Description
 
+
 ## Documentation
 Computations sometimes reach a level of complexity that begins to bloat the
 design. The conceptual “what” is swamped by the mechanistic “how”. A large
@@ -25,7 +26,14 @@ approach to structurally marking off the core domain.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -1,6 +1,7 @@
 # System Metaphor (Concept)
 ## Description
 
+
 ## Documentation
 Metaphorical thinking is pervasive in software development, especially with
 models. But the Extreme Programming practice of “metaphor” has come to mean a
@@ -25,7 +26,14 @@ in the way.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

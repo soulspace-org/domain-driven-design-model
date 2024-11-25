@@ -3,6 +3,7 @@
 Isolates the expression of the domain model and the business logic, and
 eliminates any dependency on infrastructure, user interface, or application logic
 that is not business logic.
+
 ## Documentation
 In an object-oriented program, UI, database, and other support code often gets
 written directly into the business objects. Additional business logic is
@@ -40,7 +41,14 @@ system concerns.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

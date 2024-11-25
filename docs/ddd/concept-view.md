@@ -167,5 +167,9 @@ identified by their state. Value objects should be modelled as immutable.
 
 
 
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
+
 (generated with docs/views/concept-view.md.cmb)
 

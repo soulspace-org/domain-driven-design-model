@@ -2,6 +2,7 @@
 ## Description
  The context map provides an overview for all models and their boundaries and
 interfaces.
+
 ## Documentation
 To plot strategy, we need a realistic, large-scale view of model development
 extending across our project and others we integrate with.
@@ -38,7 +39,14 @@ pages, with a set of common patterns of relationships between bounded contexts.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

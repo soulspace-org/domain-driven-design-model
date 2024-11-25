@@ -6,4 +6,8 @@ This is a list of the user roles.
 |---|---|
 
 
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](./views.md)
+
 (generated with docs/user-roles.md.cmb)

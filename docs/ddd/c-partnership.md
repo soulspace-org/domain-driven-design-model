@@ -2,6 +2,7 @@
 ## Description
 A partnership between the teams in charge of the two
 contexts, when the teams will succeed or fail together.
+
 ## Documentation
 When teams in two contexts will succeed or fail together, a cooperative
 relationship often emerges.
@@ -39,7 +40,14 @@ server system.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

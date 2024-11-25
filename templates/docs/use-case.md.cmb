@@ -83,12 +83,24 @@
     (and (contains? #{:use-case} (:el e)) (m/resolve-view model e "use-case-view"))
 %>
 ## Use Case View
-<%= (md/relative-view-link e (m/resolve-view model e "use-case-view")) %>
+<%= (md/relative-diagram-link e (m/resolve-view model e "use-case-view")) %>
 
-<%= (md/relative-element-link e (m/resolve-view model e "use-case-view")) %>
+<%= (md/relative-view-link e (m/resolve-view model e "use-case-view")) %>
 <%
   )
+
+  (when (seq (:tags e))
+%>
+### Tags
+<%= (str/join ", " (:tags e)) %>
+<%
+  )
+
 )
 %>
+
+## Navigation
+<%= (md/file-link "./views-in-namespace.md" "List of views in namespace") %>
+<%= (md/relative-file-link e "views.md" "List of all Views") %>
 
 (generated with <%= (:template ctx) %>)

@@ -2,6 +2,7 @@
 ## Description
 The most fundamental differentiating concepts in the model, factored
 into distinct classes, abstract classes, or interfaces.
+
 ## Documentation
 Even the core domain model usually has so much detail that communicating the
 big picture can be difficult.
@@ -22,7 +23,14 @@ defined by subdomain.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

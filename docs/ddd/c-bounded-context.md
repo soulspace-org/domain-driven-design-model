@@ -2,6 +2,7 @@
 ## Description
 A descrition of a boundary (typically a subsystem or the work of
 a particular team) within which a particular model is defined and applicable.
+
 ## Documentation
 Multiple models are in play on any large project. They emerge for many reasons.
 Two subsystems commonly serve very different user communities, with different
@@ -27,7 +28,14 @@ which need not be used elsewhere.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -123,4 +123,8 @@ An object in the domain model, which has no conceptional identity but are
 identified by their state. Value objects should be modelled as immutable.
 
 
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
+
 (generated with docs/views/glossary-view.md.cmb)

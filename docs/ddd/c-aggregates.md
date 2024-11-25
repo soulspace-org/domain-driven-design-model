@@ -5,6 +5,7 @@ associations and form a transactional unit. Aggregates are referenced as a
 whole by an aggregate root entity, parts of the aggregate must not be
 referenced from outside. The aggregate root is responsible for the enforcement
 of the busines rules and invariants of the aggregate.
+
 ## Documentation
 It is difficult to guarantee the consistency of changes to objects in a model
 with complex associations. Objects are supposed to maintain their own internal
@@ -38,7 +39,14 @@ and flexibility as well as resolving the transactional and distribution issues.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -30,7 +30,7 @@
 | Name | Description |
 |---|---|
 <%
-    (doseq [package (sort-by :name package)]
+    (doseq [package (sort-by :name packages)]
 %>|<%= (md/relative-element-link e package) %>|<%= (t/single-line (:desc package)) %>|
 <%
     )
@@ -57,7 +57,19 @@
 <%
     )
   )
+
+  (when (seq (:tags e))
+%>
+### Tags
+<%= (str/join ", " (:tags e)) %>
+<%
+  )
+
 )
 %>
+
+## Navigation
+<%= (md/file-link "./views-in-namespace.md" "List of views in namespace") %>
+<%= (md/relative-file-link e "views.md" "List of all Views") %>
 
 (generated with <%= (:template ctx) %>)

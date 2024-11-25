@@ -1,6 +1,7 @@
 # Conformist (Concept)
 ## Description
 
+
 ## Documentation
 When two development teams have an upstream/downstream relationship in which the
 upstream has no motivation to provide for the downstream team’s needs, the
@@ -23,7 +24,14 @@ may be sufficient to get them to share information with you.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

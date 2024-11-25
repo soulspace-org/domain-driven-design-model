@@ -4,6 +4,7 @@ A Big Ball of Mud is a casually, even haphazardly, structured system.
 Its organization, if one can call it that, is dictated more by expediency than
 design. Yet, its enduring popularity cannot merely be indicative of a general
 disregard for architecture.
+
 ## Documentation
 As we survey existing software systems, trying to understand how distinct
 models are being applied within defined boundaries, we find parts of systems,
@@ -35,7 +36,14 @@ tendency for such systems to sprawl into other contexts.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

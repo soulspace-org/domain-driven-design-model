@@ -4,6 +4,7 @@ Objects in the domain model which are defined by their identity rather than
 by their state. For example a Person is normally modelled as an entity. It
 represents the same person even when the attributes change. It is also a
 different person, even if it has the same state as another person.
+
 ## Documentation
 Many objects represent a thread of continuity and identity, going through a
 lifecycle, though their attributes may change.
@@ -33,7 +34,14 @@ The model must define what it means to be the same thing.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

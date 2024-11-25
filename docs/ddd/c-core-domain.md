@@ -1,6 +1,7 @@
 # Core Domain (Concept)
 ## Description
 The most valuable part of the domain model.
+
 ## Documentation
 In a large system, there are so many contributing components, all complicated
 and all absolutely necessary to success, that the essence of the domain model,
@@ -27,7 +28,14 @@ Justify investment in any other part by how it supports the distilled core.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -2,6 +2,7 @@
 ## Description
 A language around the domain model used by all team members within a
 bounded context to connect all the activities of the team with the software.
+
 ## Documentation
 To create a supple, knowledge-rich design calls for a versatile, shared team
 language, and a lively experimentation with language that seldom happens on
@@ -47,7 +48,14 @@ Recognize that a change in the language is a change to the model.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

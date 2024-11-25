@@ -5,6 +5,7 @@ model from outside models. It enables the domain model to access the data of
 the outside model as expected by the domain model.
 In a clean architecture, an adapter is the place to implement the anti-
 corruption layer by mapping the outside model to the domain model.
+
 ## Documentation
 Translation layers can be simple, even elegant, when bridging well-designed
 bounded contexts with cooperative teams. But when control or communication is
@@ -30,7 +31,14 @@ in one or both directions as necessary between the two models.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

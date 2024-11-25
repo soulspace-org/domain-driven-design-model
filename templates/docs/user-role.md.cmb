@@ -80,7 +80,19 @@ The <%= (:name e) %> is an actor in these use cases.
 <%
     )
   )
+
+  (when (seq (:tags e))
+%>
+### Tags
+<%= (str/join ", " (:tags e)) %>
+<%
+  )
+
 )
 %>
+
+## Navigation
+<%= (md/file-link "./views-in-namespace.md" "List of views in namespace") %>
+<%= (md/relative-file-link e "views.md" "List of all Views") %>
 
 (generated with <%= (:template ctx) %>)

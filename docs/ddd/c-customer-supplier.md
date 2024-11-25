@@ -2,6 +2,7 @@
 ## Description
 A clear relationship between two teams, where the downstream team is the customer
 of the upstream team.
+
 ## Documentation
 When two teams are in an upstream-downstream relationship, where the upstream
 team may succeed independently of the fate of the downstream team, the needs of
@@ -32,7 +33,14 @@ downstream.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -89,11 +89,23 @@
     (and (contains? #{:organization :org-unit} (:el e)) (m/resolve-view model e "organization-structure-view"))
 %>
 ## Organization Structure
+<%= (md/relative-diagram-link e (m/resolve-view model e "organization-structure-view")) %>
 <%= (md/relative-view-link e (m/resolve-view model e "organization-structure-view")) %>
-<%= (md/relative-element-link e (m/resolve-view model e "organization-structure-view")) %>
 <%
   )
+
+  (when (seq (:tags e))
+%>
+### Tags
+<%= (str/join ", " (:tags e)) %>
+<%
+  )
+
 )
 %>
+
+## Navigation
+<%= (md/file-link "./views-in-namespace.md" "List of views in namespace") %>
+<%= (md/relative-file-link e "views.md" "List of all Views") %>
 
 (generated with <%= (:template ctx) %>)

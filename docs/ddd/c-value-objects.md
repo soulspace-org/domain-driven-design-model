@@ -2,6 +2,7 @@
 ## Description
 An object in the domain model, which has no conceptional identity but are
 identified by their state. Value objects should be modelled as immutable.
+
 ## Documentation
 Some objects describe or compute some characteristics of a thing.
 
@@ -30,7 +31,14 @@ identity and avoid the design complexities neccessary to maintain entities.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

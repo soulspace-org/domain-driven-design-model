@@ -1,6 +1,7 @@
 # Responsibility Layers (Concept)
 ## Description
 
+
 ## Documentation
 In object-oriented design, individual objects are assigned narrow sets of
 related responsibilities. Responsibility-driven design also applies to larger
@@ -23,7 +24,14 @@ layer.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
-[Concept Map](../ddd/concept-view.md)
+[Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
 
+### Tags
+Pattern
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)
