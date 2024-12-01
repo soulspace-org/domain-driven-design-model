@@ -35,12 +35,12 @@
  ;;  Markdown Generation for Model Elements
  ;;
  #_{:selection {}
-  :template "docs/index.md.cmb"
-  :per-element false
-  :title "Documentation Overview"
-  :base-name "index"
-  :extension "md"}
- 
+    :template "docs/index.md.cmb"
+    :per-element false
+    :title "Documentation Overview"
+    :base-name "index"
+    :extension "md"}
+
  {:selection {:el :concept}
   :template "docs/concept.md.cmb"
   :per-element true
@@ -94,6 +94,12 @@
   :extension "md"}
 
  {:selection {:el :technical-architecture-model-node}
+  :template "docs/architecture-node.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"}
+
+ {:selection {:el :boundary}
   :template "docs/architecture-node.md.cmb"
   :per-element true
   :id-as-name true
