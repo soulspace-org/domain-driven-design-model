@@ -29,6 +29,17 @@ To tie the implementation slavishly to a model usually requires software
 development tools and languages that support a modeling paradigm, such as
 object-oriented programming.
 
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../ddd/c-model-driven-design.md) | define model within | [Bounded Context](../ddd/c-bounded-context.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express change with | [Domain Events](../ddd/c-domain-events.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express identity with | [Entities](../ddd/c-entities.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express model with | [Services](../ddd/c-services.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express state and computation with | [Value Objects](../ddd/c-value-objects.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | isolate domain expressions with | [Clean Architecture](../ddd/c-clean-architecture.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | model gives structure to | [Ubiquitous Language](../ddd/c-ubiquitous-language.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -39,6 +50,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

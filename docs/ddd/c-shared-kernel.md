@@ -33,6 +33,11 @@ and align the ubiquitous language of the teams. Integrate a functional system
 frequently, though somewhat less often than the pace of continuous integration
 within the teams.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | overlap contexts | [Shared Kernel](../ddd/c-shared-kernel.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -43,6 +48,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

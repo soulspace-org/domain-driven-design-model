@@ -26,6 +26,13 @@ fulfill the vision of the system.
 
 Justify investment in any other part by how it supports the distilled core.
 
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Core Domain](../ddd/c-core-domain.md) | avoid overinvesting in | [Generic Subdomains](../ddd/c-generic-subdomains.md) |  |
+| [Core Domain](../ddd/c-core-domain.md) | culivate rich model with | [Ubiquitous Language](../ddd/c-ubiquitous-language.md) |  |
+| [Core Domain](../ddd/c-core-domain.md) | work in autonomous, clean | [Bounded Context](../ddd/c-bounded-context.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -36,6 +43,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

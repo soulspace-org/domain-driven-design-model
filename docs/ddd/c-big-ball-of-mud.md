@@ -34,6 +34,11 @@ tendency for such systems to sprawl into other contexts.
 
 (see [Big Ball of Mud - Brian Foote and Joseph Yoder](http://www.laputan.org/mud/mud.html))
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | seggregate the conceptual messes | [Big Ball of Mud](../ddd/c-big-ball-of-mud.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -44,6 +49,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -37,6 +37,23 @@ This map can be a basis for realistic design strategy.
 The characterization of relationships is made more concrete in the following
 pages, with a set of common patterns of relationships between bounded contexts.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Bounded Context](../ddd/c-bounded-context.md) | assess/overview relationships with | [Context Map](../ddd/c-context-map.md) |  |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | coordinate interdependent contexts | [Partnership](../ddd/c-partnership.md) |  |
+| [Context Map](../ddd/c-context-map.md) | coordinate upstream/downstream | [Customer/Supplier](../ddd/c-customer-supplier.md) |  |
+| [Context Map](../ddd/c-context-map.md) | free teams to go | [Separate Ways](../ddd/c-separate-ways.md) |  |
+| [Context Map](../ddd/c-context-map.md) | overlap contexts | [Shared Kernel](../ddd/c-shared-kernel.md) |  |
+| [Context Map](../ddd/c-context-map.md) | overlap unilaterally as | [Conformist](../ddd/c-conformist.md) |  |
+| [Context Map](../ddd/c-context-map.md) | seggregate the conceptual messes | [Big Ball of Mud](../ddd/c-big-ball-of-mud.md) |  |
+| [Context Map](../ddd/c-context-map.md) | support multiple clients through | [Open Host Service](../ddd/c-open-host-service.md) |  |
+| [Context Map](../ddd/c-context-map.md) | translate and isolate unilaterally with | [Anti-Corruption Layer](../ddd/c-anti-corruption-layer.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -47,6 +64,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

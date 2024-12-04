@@ -28,6 +28,16 @@ is downstream, and typically some of them will be conformist and some will
 build anticorruption layers. A context with an open host service might have any
 sort of relationship to contexts other than its clients.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | support multiple clients through | [Open Host Service](../ddd/c-open-host-service.md) |  |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Open Host Service](../ddd/c-open-host-service.md) | formalized as | [Published Language](../ddd/c-published-language.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -38,6 +48,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

@@ -46,6 +46,13 @@ words.
 
 Recognize that a change in the language is a change to the model.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Core Domain](../ddd/c-core-domain.md) | culivate rich model with | [Ubiquitous Language](../ddd/c-ubiquitous-language.md) |  |
+| [Model Driven Design](../ddd/c-model-driven-design.md) | model gives structure to | [Ubiquitous Language](../ddd/c-ubiquitous-language.md) |  |
+| [Bounded Context](../ddd/c-bounded-context.md) | names enter | [Ubiquitous Language](../ddd/c-ubiquitous-language.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -56,6 +63,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

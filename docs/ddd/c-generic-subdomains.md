@@ -23,6 +23,11 @@ than the core domain, and avoid assigning your core developers to the tasks
 (because they will gain little domain knowledge from them). Also consider
 off-the-shelf solutions or published models for these generic subdomains.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Core Domain](../ddd/c-core-domain.md) | avoid overinvesting in | [Generic Subdomains](../ddd/c-generic-subdomains.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -33,6 +38,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

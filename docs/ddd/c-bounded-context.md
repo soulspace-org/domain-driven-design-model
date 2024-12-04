@@ -26,6 +26,19 @@ strictly consistent within these bounds, but don't be distracted or confused by
 issues outside. Standardize a single development process within the context,
 which need not be used elsewhere.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../ddd/c-model-driven-design.md) | define model within | [Bounded Context](../ddd/c-bounded-context.md) |  |
+| [Core Domain](../ddd/c-core-domain.md) | work in autonomous, clean | [Bounded Context](../ddd/c-bounded-context.md) |  |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Bounded Context](../ddd/c-bounded-context.md) | assess/overview relationships with | [Context Map](../ddd/c-context-map.md) |  |
+| [Bounded Context](../ddd/c-bounded-context.md) | keep model unified with | [Continuous Integration](../ddd/c-continuous-integration.md) |  |
+| [Bounded Context](../ddd/c-bounded-context.md) | names enter | [Ubiquitous Language](../ddd/c-ubiquitous-language.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -36,6 +49,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

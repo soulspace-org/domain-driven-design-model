@@ -23,6 +23,13 @@ encapsulates all complex assembly and that does not require the client to
 reference the concrete classes of the objects being instantiated. Create entire
 AGGREGATES as a piece, enforcing their invariants.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Value Objects](../ddd/c-value-objects.md) | encapsulate with | [Factories](../ddd/c-factories.md) |  |
+| [Entities](../ddd/c-entities.md) | encapsulate with | [Factories](../ddd/c-factories.md) |  |
+| [Aggregates](../ddd/c-aggregates.md) | encapsulate with | [Factories](../ddd/c-factories.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -33,6 +40,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

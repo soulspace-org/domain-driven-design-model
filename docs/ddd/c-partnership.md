@@ -38,6 +38,11 @@ test suite can be defined that proves the interface meets the expectations of
 the client system, which can be run as part of continuous integration on the
 server system.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | coordinate interdependent contexts | [Partnership](../ddd/c-partnership.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -48,6 +53,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

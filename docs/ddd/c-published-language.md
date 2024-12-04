@@ -25,6 +25,11 @@ organization.
 
 Published language is often combined with open-host service.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Open Host Service](../ddd/c-open-host-service.md) | formalized as | [Published Language](../ddd/c-published-language.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -35,6 +40,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

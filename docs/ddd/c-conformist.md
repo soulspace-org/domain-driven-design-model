@@ -22,6 +22,11 @@ will share a ubiquitous language with your upstream team. The upstream is in
 the driver’s seat, so it is good to make communication easy for them. Altruism
 may be sufficient to get them to share information with you.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | overlap unilaterally as | [Conformist](../ddd/c-conformist.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -32,6 +37,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

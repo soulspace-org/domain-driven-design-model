@@ -32,6 +32,20 @@ distinctions in the model.
 
 The model must define what it means to be the same thing.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express identity with | [Entities](../ddd/c-entities.md) |  |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Entities](../ddd/c-entities.md) | access with | [Repositories](../ddd/c-repositories.md) |  |
+| [Entities](../ddd/c-entities.md) | act as root of | [Aggregates](../ddd/c-aggregates.md) |  |
+| [Entities](../ddd/c-entities.md) | encapsulate with | [Factories](../ddd/c-factories.md) |  |
+| [Entities](../ddd/c-entities.md) | encapsulate with | [Aggregates](../ddd/c-aggregates.md) |  |
+| [Entities](../ddd/c-entities.md) | push state change with | [Domain Events](../ddd/c-domain-events.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -42,6 +56,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

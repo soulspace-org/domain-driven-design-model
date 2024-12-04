@@ -37,6 +37,19 @@ boundaries, reconsider the model. Is the domain scenario hinting at an
 important new insight? Such changes often improve the model's expressiveness
 and flexibility as well as resolving the transactional and distribution issues.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Entities](../ddd/c-entities.md) | act as root of | [Aggregates](../ddd/c-aggregates.md) |  |
+| [Entities](../ddd/c-entities.md) | encapsulate with | [Aggregates](../ddd/c-aggregates.md) |  |
+| [Value Objects](../ddd/c-value-objects.md) | encapsulate with | [Aggregates](../ddd/c-aggregates.md) |  |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Aggregates](../ddd/c-aggregates.md) | access with | [Repositories](../ddd/c-repositories.md) |  |
+| [Aggregates](../ddd/c-aggregates.md) | encapsulate with | [Factories](../ddd/c-factories.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -47,6 +60,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

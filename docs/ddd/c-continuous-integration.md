@@ -18,6 +18,11 @@ frequently, with automated tests to flag fragmentation quickly.
 Relentlessly exercise the ubiquitous language to hammer out a shared view of
 the model as the concepts evolve in different people's heads.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Bounded Context](../ddd/c-bounded-context.md) | keep model unified with | [Continuous Integration](../ddd/c-continuous-integration.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -28,6 +33,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

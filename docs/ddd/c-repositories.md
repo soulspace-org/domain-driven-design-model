@@ -39,6 +39,12 @@ lazy way. Provide repositories only for aggregate roots that actually need
 direct access. Keep application logic focussed on the model, delegating all
 object storage and access to the repository.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Entities](../ddd/c-entities.md) | access with | [Repositories](../ddd/c-repositories.md) |  |
+| [Aggregates](../ddd/c-aggregates.md) | access with | [Repositories](../ddd/c-repositories.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -49,6 +55,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

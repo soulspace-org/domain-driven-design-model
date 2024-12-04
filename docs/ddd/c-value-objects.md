@@ -29,6 +29,17 @@ Treat the value object as immutable. Make all operations Side-effect-free
 Functions that don't depend on any mutable state. Don't give a value object any
 identity and avoid the design complexities neccessary to maintain entities.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express state and computation with | [Value Objects](../ddd/c-value-objects.md) |  |
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Value Objects](../ddd/c-value-objects.md) | encapsulate with | [Factories](../ddd/c-factories.md) |  |
+| [Value Objects](../ddd/c-value-objects.md) | encapsulate with | [Aggregates](../ddd/c-aggregates.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -39,6 +50,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

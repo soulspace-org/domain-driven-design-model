@@ -29,6 +29,11 @@ This layer talks to the other system through its existing interface, requiring
 little or no modification to the other system. Internally, the layer translates
 in one or both directions as necessary between the two models.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | translate and isolate unilaterally with | [Anti-Corruption Layer](../ddd/c-anti-corruption-layer.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -39,6 +44,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

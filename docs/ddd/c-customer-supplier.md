@@ -31,6 +31,11 @@ upstream team's test suite, to be run as part of its continuous integration,
 will free the upstream team to make changes without fear of side effects
 downstream.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Context Map](../ddd/c-context-map.md) | coordinate upstream/downstream | [Customer/Supplier](../ddd/c-customer-supplier.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -41,6 +46,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

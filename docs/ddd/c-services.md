@@ -19,6 +19,11 @@ set of assertions about interactions with the service. (See assertions.) State
 these assertions in the ubiquitous language of a specific bounded context.
 Give the service a name, which also becomes part of the ubiquitous language.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express model with | [Services](../ddd/c-services.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -29,6 +34,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)

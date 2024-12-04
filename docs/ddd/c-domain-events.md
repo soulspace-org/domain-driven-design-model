@@ -49,6 +49,12 @@ event can be based on some set of these properties. So, for example, if two
 instances of the same event arrive at a node they can be recognised to be the
 same.
 
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../ddd/c-model-driven-design.md) | express change with | [Domain Events](../ddd/c-domain-events.md) |  |
+| [Entities](../ddd/c-entities.md) | push state change with | [Domain Events](../ddd/c-domain-events.md) |  |
+
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.png)
 [Concept Map of the Domain Driven Design Patterns](../ddd/concept-view.md)
@@ -59,6 +65,7 @@ Pattern
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../views.md)
 
 (generated with docs/concept.md.cmb)
