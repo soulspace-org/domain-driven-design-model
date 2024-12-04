@@ -1,7 +1,11 @@
 # <%= (:title ctx) %>
 
 ## Selection
+```clojure
 <%= (:selection ctx) %>
+```
+## Results
+<%= (count e) %> nodes selected
 
 ## Nodes
  Id |Name | Type | Subtype | Description | Techs | Tags
