@@ -1,6 +1,8 @@
-# Domain Driven Design Model
 
-A concept model of the patterns of domain driven design (DDD) for [Overarch](https://github.com/soulspace-org/overarch).
+# Domain Driven Design Model
+A concept model of the patterns of domain driven design (DDD) for [Overarch](https://github.com/soulspace-org/overarch). 
+
+*The domain driven design model has been integrated in the [Overarch Models](https://github.com/lsolbach/overarch-models) repository. It is maintained there with other models on software development.*
 
 ## Documentation generated from the model
 * [List of Views](docs/views.md)
